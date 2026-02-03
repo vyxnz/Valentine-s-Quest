@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lukes' Valentine Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loadingScreen">
+  <h2>Loading Lukes' Valentine Quest 💖</h2>
+  <div id="loader">💖💖💖</div>
+</div>
+
+<div id="startScreen">
+  <h1>Lukes' Valentine Quest 🌿</h1>
+  <p>A tiny adventure made with love</p>
+  <button onclick="startGame()">Start Adventure</button>
+</div>
+
+<div id="gameUI">
+  <div id="topBar">
+    <div id="hearts">❤️❤️❤️</div>
+    <div id="levelText">Level 1</div>
+  </div>
+
+  <div id="controlsInfo">
+    Controls: WASD to move • Mouse Click to attack • H to heal
+  </div>
+
+  <div id="dialogueBox"></div>
+</div>
+
+<canvas id="gameCanvas" width="800" height="400"></canvas>
+
+<div id="endScreen">
+  <div id="endingCard">
+    <h2>You Did It, Lukes 💌</h2>
+
+    <p>
+      Happy Valentine’s Day 💖<br><br>
+
+      I made this tiny game just for you.<br>
+      Thank you for being kind, caring,<br>
+      and for always making my days better.<br><br>
+
+      You’ll always be my favorite player two 🌿
+    </p>
+
+    <button onclick="playAgain()">Play Again</button>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

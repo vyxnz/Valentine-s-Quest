@@ -1,0 +1,104 @@
+body {
+  background-color: #0d1023;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+#startScreen {
+  display: none;
+  margin-top: 80px;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #ff8fab;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ff6f91;
+}
+
+#gameCanvas {
+  display: none;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid #ffffff44;
+}
+
+#gameUI {
+  display: none;
+  margin-bottom: 10px;
+}
+
+#topBar {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: auto;
+  font-size: 18px;
+}
+
+#controlsInfo {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+#dialogueBox {
+  margin: 10px auto;
+  width: 760px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+#endScreen {
+  display: none;
+  margin-top: 50px;
+}
+
+/* Pretty ending card */
+#endingCard {
+  background: rgba(255, 192, 203, 0.15);
+  width: 60%;
+  margin: auto;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 15px pink;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Loading Screen */
+#loadingScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0d1023;
+  color: white;
+}
+
+#loader {
+  font-size: 24px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
